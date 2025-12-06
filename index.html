@@ -14,12 +14,110 @@
       rel="stylesheet"
     />
   </head>
-  <header></header>
-  <main>
-    <body></body>
-  </main>
-  <footer>
-    <p></p>
-  </footer>
+  <body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="./captrap/index.html" class="header__nav-link">Over</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./about.html" class="header__nav-link">Product</a>
+              </li>
+              <li class="header__nav-item header__nav-item--logo">
+                <img src="#" alt="Logo" class="header__logo" />
+              </li>
+              <li class="header__nav-item">
+                <a href="./services.html" class="header__nav-link">B2B</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./contact.html" class="header__nav-link">Contact</a>
+              </li>
+            </ul>
+        </nav>
+      <img
+        src="./media/icons/hamburger-menu-mobile-svgrepo-com.svg"
+        alt="hamburger"
+        class="header__menu-toggle"
+      />
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__title">Welkom bij CapTrap</h1>
+        <p class="hero__subtitle">
+          Een innovatieve oplossing die de manier waarop je doppen verzamelt
+          revolutioneert
+        </p>
+        <article class="hero__content">
+          <video class="hero__video" width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="hero__buttons">
+            <button class="button button__findmore">Ontdek meer</button>
+            <button class="button button__contact">Contact</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="features">
+        <h2 class="features__title">waarom CapTrap</h2>
+        <p class="features__subtitle">Ontdek wat CapTrap zo bijzonder maakt</p>
+        <div class="features__grid">
+          <article class="feature-card">
+            <img
+              src="./media/icons/sparkle.svg"
+              alt="sparkle"
+              class="feature-card__icon"
+            />
+            <p class="feature-card__title">Innocatief Design</p>
+            <p class="feature-card__description">
+              Uniek en doordacht ontwerp dat functionaliteit combineert met
+              stijl
+            </p>
+          </article>
+          <article class="feature-card">
+            <img
+              src="./media/icons/star.svg"
+              alt="star"
+              class="feature-card__icon"
+            />
+            <p class="feature-card__title">Hoogwaardige kwaliteit</p>
+            <p class="feature-card__description">
+              Gemaakt met de beste materialen voor langdurig gebruik
+            </p>
+          </article>
+          <article class="feature-card">
+            <img
+              src="./media/icons/goal.svg"
+              alt="goal"
+              class="feature-card__icon"
+            />
+            <p class="feature-card__title">Gebruiksvriendelijk</p>
+            <p class="feature-card__description">
+              Eenvoudig in gebruik, voor iedereen toegankelijk
+            </p>
+          </article>
+          <article class="feature-card">
+            <img
+              src="./media/icons/leaf.svg"
+              alt="leaf"
+              class="feature-card__icon"
+            />
+            <p class="feature-card__title">Duurzaam</p>
+            <p class="feature-card__description">
+              Ontwikkeld met oog voor milieu en duurzaamheid
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text"></p>
+    </footer>
+  </body>
   <script src="./scripts/main.js"></script>
 </html>

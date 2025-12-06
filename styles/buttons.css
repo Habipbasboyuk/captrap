@@ -1,0 +1,15 @@
+.button__findmore {
+    background-color: var(--color-primary);
+    color: white;
+
+}
+
+.button__contact {
+    background-color: var(--color-secondary);
+
+}
+
+.button__contact, .button__findmore {
+    width: 30
+    %;
+}

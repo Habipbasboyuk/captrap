@@ -1,0 +1,18 @@
+.header {
+    position: relative;
+}
+
+.header__nav-list {
+    
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    a {
+        text-decoration: none;
+        color: var(--color-primary);
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,21 @@
+.header__menu-toggle {
+    width: 3rem;
+    height: 3rem;
+    background-image: url('../images/menu-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: -0.5rem;
+    right: 1rem;
+}
+
+.feature-card__icon {
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+}
