@@ -1,0 +1,22 @@
+:root {
+    /* fonts */
+    --font-primary: 'DM Sans', sans-serif;
+    /* padding */
+    --padding-small: 1rem;
+    --padding-medium: 2rem;
+    --padding-large: 3rem;
+    --padding-xlarge: 4rem;
+
+    /* margins */
+    --margin-small: 1rem;
+    --margin-medium: 2rem;
+    --margin-large: 3rem;
+    --margin-xlarge: 4rem;
+    /* colors */
+    --color-primary: #1A1A1A;
+    --color-secondary: #F7BA04;
+    --color-background: #ffffff;
+    /* border-radius */
+    --border-radius: 8px;
+
+}
