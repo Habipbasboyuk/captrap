@@ -2,7 +2,9 @@
 @import url('./landing.css');
 @import url('./header.css');
 @import url('./buttons.css');
-
+@import url('./cards.css');
+@import url('./about.css');
+@import url('./over.css');
 :root {
     /* fonts */
     --font-primary: 'DM Sans', sans-serif;
@@ -21,7 +23,8 @@
     --color-primary: #1A1A1A;
     --color-secondary: #F7BA04;
     --color-background: #ffffff;
-    --color-paragraph: #9A9A9A;
+    --color-paragraph: #6e6e6e;
+    --color-cards-about: #312B18;
     /* border-radius */
     --border-radius: 8px;
 

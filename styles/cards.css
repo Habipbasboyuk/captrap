@@ -1,0 +1,22 @@
+.feature-card {
+    border: 1px solid var(--color-paragraph);
+    margin: 1rem;
+    border-radius: var(--border-radius);
+    padding: 1rem 1.5rem;
+    text-align: left;
+
+    p {
+        text-align: left;
+    }
+
+
+    .feature-card__icon {
+        margin: 0;
+    }
+
+    .feature-card__title {
+        color: var(--color-primary);
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+}

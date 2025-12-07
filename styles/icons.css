@@ -1,21 +1,65 @@
 .header__menu-toggle {
-    width: 3rem;
-    height: 3rem;
-    background-image: url('../images/menu-icon.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../images/menu-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
 
-    position: absolute;
-    top: -0.5rem;
-    right: 1rem;
+  position: absolute;
+  top: -0.5rem;
+  right: 1rem;
 }
 
 .feature-card__icon {
-    width: 2rem;
-    height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+
+.about-solution-card__image {
+    width: 3rem;
+    height: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
+}
+
+.about-problem-card__image {
+  width: 4rem;
+  height: 4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+
+.over__feature-icon {
+  width: 4rem;
+  height: 4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+
+.over__feature-icon--leaf {
+    background-color: #DCFCE7;
+}
+
+.over__feature-icon--box {
+    background-color: #E0E7FF;
+}
+
+.over__feature-icon--recycle {
+    background-color: #FEF3C7;
+}
+
+.over__feature-icon--trash-list {
+    background-color: #FEE2E2;
+}
+
+.over__feature-icon--location-pin {
+    background-color: #F3E8FF;
 }

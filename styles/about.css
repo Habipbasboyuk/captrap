@@ -1,0 +1,174 @@
+.about-hero {
+    margin: 3rem 0;
+    .about-hero__title {
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+
+    .about-hero__description {
+        width: 95%;
+        font-size: 1.3rem;
+        line-height: 1.4;
+        margin: 0 auto;
+    }
+
+    .about-hero__actions {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 90%;
+        margin: 2rem auto 0 auto;
+
+        button {
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+        }
+
+        .button__ordernow {
+            background-color: var(--color-secondary);
+        }
+
+        .button__b2b {
+            background-color: var(--color-primary);
+            color: #ffffff;
+        }
+    }
+}
+
+.about-problems {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 2rem 0;
+    p {
+        color: var(--color-secondary);
+    }
+
+    .about-problems__title {
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .about-problems__description {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .about-problems__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+
+        .about-problem-card {
+            background-color: var(--color-cards-about);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+
+            .about-problem-card__title {
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+
+.about-solution {
+  margin-top: 2rem;
+
+  .about-solution__title {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .about-solution__description {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .about-solution__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin: 1rem;
+    border: 1px solid var(--color-paragraph);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    
+    .about-solution-card {
+        background-color: rgb(235, 234, 234);
+        display: flex;
+        padding: 1rem;
+        border-radius: var(--border-radius);
+
+        .about-solution-card__content {
+            padding-left: 1rem;
+            p, h3 {
+                text-align: left;
+            }
+        }
+    }
+  }
+}
+
+.about-cta {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+
+    .about-cta__title {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+
+
+    .about-cta__actions {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 90%;
+        margin: 2rem auto 0 auto;
+
+        button {
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+        }
+
+        .button-cta__order {
+            background-color: var(--color-primary);
+            color: #ffffff;
+        }
+        .button-cta__b2b {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+        }
+    }
+}
