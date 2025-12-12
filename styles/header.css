@@ -1,61 +1,167 @@
 .header {
-    position: relative;
+  position: relative;
+}
+
+.nonactive {
+  display: none !important;
+}
+
+body.darker::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  pointer-events: none;
+}
+
+.header__nav-mobile--visible {
+  display: flex;
+  position: fixed;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  background-color: white;
+  z-index: 9999;
+  flex-direction: column;
+  justify-content: flex-start; /* align content to top */
+  align-items: flex-start; /* align items to left */
+  padding: 2rem 0; /* add inner spacing */
+  animation: slideInFromRight 0.3s ease-in-out;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .header__nav-list {
-    margin: 1rem 1rem 0rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
 
-    li:not(:nth-child(3)):not(.activepage) {
-        position: relative;
-        padding-bottom: 4px;
-        cursor: pointer;
-        display: none;
-        /* De 'onzichtbare' border */
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: var(--color-secondary);
-            
-            /* Start-staat: ingekrompen naar het midden (of links) */
-            transform: scaleX(0);
-            transition: transform 0.3s ease-in-out;
-            transform-origin: bottom right; /* Animeert van rechts naar links bij weghalen */
-        }
+  /* Desktop-only: hide items except logo and active page in the top nav */
+  .header__nav & li:not(:nth-child(3)):not(.activepage) {
+    position: relative;
+    padding-bottom: 4px;
+    cursor: pointer;
+    display: none;
+    /* De 'onzichtbare' border */
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-secondary);
 
-        &:hover::after {
-            /* Eind-staat: volledige breedte */
-            transform: scaleX(1);
-            transform-origin: bottom left; /* Animeert van links naar rechts bij hover */
-        }
+      /* Start-staat: ingekrompen naar het midden (of links) */
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+      transform-origin: bottom right; /* Animeert van rechts naar links bij weghalen */
     }
 
-    a {
-        text-decoration: none;
-        color: var(--color-primary);
-        font-weight: 500;
+    &:hover::after {
+      /* Eind-staat: volledige breedte */
+      transform: scaleX(1);
+      transform-origin: bottom left; /* Animeert van links naar rechts bij hover */
     }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+}
+
+/* Mobile overlay: show all items and stack vertically */
+.header__nav-mobile--visible .header__nav-list {
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.header__nav-mobile--visible .header__nav-list li {
+  display: block; /* override desktop hidden items */
+}
+
+.header__nav-mobile--visible .header__nav-list a {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.header__nav-mobile--visible .header__nav-list a.active {
+  color: var(--color-secondary);
+}
+
+/* Mobile: no underline or bottom border for active item */
+.header__nav-mobile--visible .header__nav-list .activepage {
+  border-bottom: none;
+}
+
+.header__nav-mobile--visible .header__nav-list .activepage a {
+  color: var(--color-secondary);
 }
 
 .activepage {
-    border-bottom: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
 }
 
 .logo__container {
-    padding: 0.6rem;
-    background-color: #F7BA04;
-    border-radius: 16px;
+    margin-top: 1rem;
+  padding: 0.6rem;
+  background-color: #f7ba04;
+  border-radius: 16px;
 }
 .header__logo {
-    width: 3rem;
-    margin: 0;
+  width: 3rem;
+  margin: 0;
+}
+
+/* Ensure logo item never gets underline/border */
+.header__nav .header__nav-list .header__nav-item--logo,
+.header__nav .header__nav-list .header__nav-item--logo a {
+  border-bottom: none !important;
+  text-decoration: none !important;
+  
+}
+
+.header__menu-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+/* Mobile: hide desktop nav bar, show only hamburger + overlay */
+@media (max-width: 768px) {
+  /* Hide desktop nav items except the centered logo */
+  .header__nav .header__nav-list li:not(.header__nav-item--logo) {
+    display: none;
+  }
+}
+
+.header__nav--mobile {
+}
+
+.header__nav-list--mobile {
+  text-align: left !important;
 }

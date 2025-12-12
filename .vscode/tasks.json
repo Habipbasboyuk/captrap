@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Preview index.html",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"Start-Process msedge \"$(Resolve-Path index.html)\""
+			],
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}

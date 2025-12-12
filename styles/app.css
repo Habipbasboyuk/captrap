@@ -42,3 +42,7 @@
  p {
     color: var(--color-paragraph);
  }
+
+ main {
+   position: relative;
+ }

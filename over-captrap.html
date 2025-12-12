@@ -15,28 +15,50 @@
     />
 </head>
 <body>
-        <header class="header">
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./product.html">Product</a></li>
-              
-              <li class="header__nav-item header__nav-item--logo">
-                <div class="logo__container">
-                  <a href="./index.html"><img src="./media/logo/captraplogo.PNG" alt="Logo" class="header__logo" /></a>
-                  
-                </div>
-              </li>
-              <li><a href="./over-captrap.html">Over CapTrap</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-      <img
-        src="./media/icons/hamburger-menu-mobile-svgrepo-com.svg"
-        alt="hamburger"
-        class="header__menu-toggle"
-      />
+            <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./product.html">Product</a></li>
+
+          <li class="header__nav-item header__nav-item--logo">
+            <div class="logo__container">
+              <a href="./index.html"
+                ><img
+                  src="./media/logo/captraplogo.PNG"
+                  alt="Logo"
+                  class="header__logo"
+              /></a>
+            </div>
+          </li>
+          <li><a href="./over-captrap.html">Over CapTrap</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    <img
+      src="./media/icons/hamburger-menu-mobile-svgrepo-com.svg"
+      alt="hamburger"
+      class="header__menu-toggle"
+    />
+
+    <nav class="header__nav--mobile header__nav-mobile--visible nonactive">
+      <ul class="header__nav-list header__nav-list--mobile">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./over-captrap.html">Over CapTrap</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./about.html">About</a></li>
+
+      </ul>
+      <img
+        class="menu-closer nonactive"
+        src="./media/icons/close.svg"
+        alt="close menu"
+      />
+    </nav>
         <main class="over">
             <section class="over__intro">
                 <h1 class="over__title">Over CapTrap</h1>
@@ -122,4 +144,5 @@
             </section>
         </main>
 </body>
+<script src="./scripts/main.js"></script>
 </html>

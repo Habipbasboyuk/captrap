@@ -36,12 +36,30 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
-      <img
-        src="./media/icons/hamburger-menu-mobile-svgrepo-com.svg"
-        alt="hamburger"
-        class="header__menu-toggle"
-      />
     </header>
+    <img
+      src="./media/icons/hamburger-menu-mobile-svgrepo-com.svg"
+      alt="hamburger"
+      class="header__menu-toggle"
+    />
+
+    <nav class="header__nav--mobile header__nav-mobile--visible nonactive">
+      <ul class="header__nav-list header__nav-list--mobile">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./over-captrap.html">Over CapTrap</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./about.html">About</a></li>
+
+      </ul>
+      <img
+        class="menu-closer nonactive"
+        src="./media/icons/close.svg"
+        alt="close menu"
+      />
+    </nav>
     <main class="contact">
       <section class="contact__intro">
         <h1 class="contact__title">Contact</h1>
@@ -54,7 +72,11 @@
         <h2 class="contact__details-title">Contactgegevens</h2>
         <div class="contact__details-container">
           <article class="contact__detail">
-            <img  src="./media/icons/contact/email.svg" alt="" class="contact__detail-icon" />
+            <img
+              src="./media/icons/contact/email.svg"
+              alt=""
+              class="contact__detail-icon"
+            />
 
             <div class="contact__detail-info">
               <p class="contact__detail-label">E-mail</p>
@@ -65,7 +87,11 @@
           </article>
 
           <article class="contact__detail">
-            <img src="./media/icons/contact/telephone.svg" alt="" class="contact__detail-icon" />
+            <img
+              src="./media/icons/contact/telephone.svg"
+              alt=""
+              class="contact__detail-icon"
+            />
 
             <div class="contact__detail-info">
               <p class="contact__detail-label">Telefoon</p>
@@ -76,7 +102,11 @@
           </article>
 
           <article class="contact__detail">
-            <img src="./media/icons/contact/instagram.svg" alt="" class="contact__detail-icon" />
+            <img
+              src="./media/icons/contact/instagram.svg"
+              alt=""
+              class="contact__detail-icon"
+            />
 
             <div class="contact__detail-info">
               <p class="contact__detail-label">Instagram</p>
@@ -126,31 +156,29 @@
               <p class="contact__customer-type-title">Type klant</p>
 
               <div class="selector__container">
-                  <label for="B2C" class="contact__customer-type-label"
-                  >
+                <label for="B2C" class="contact__customer-type-label">
                   <input
-                  type="radio"
-                  id="B2C"
-                  name="customer-type"
-                  value="B2C"
-                  required
-                  class="contact__customer-type-input"
+                    type="radio"
+                    id="B2C"
+                    name="customer-type"
+                    value="B2C"
+                    required
+                    class="contact__customer-type-input"
                   />
                   B2C (particulier)
                 </label>
-                
-                  <label for="B2B" class="contact__customer-type-label"
-                    >
-                    <input
-                      type="radio"
-                      id="B2B"
-                      name="customer-type"
-                      value="B2B"
-                      required
-                      class="contact__customer-type-input"
-                    />
-                    B2B (Zakelijk)
-                  </label>
+
+                <label for="B2B" class="contact__customer-type-label">
+                  <input
+                    type="radio"
+                    id="B2B"
+                    name="customer-type"
+                    value="B2B"
+                    required
+                    class="contact__customer-type-input"
+                  />
+                  B2B (Zakelijk)
+                </label>
               </div>
             </div>
 
@@ -165,7 +193,12 @@
                 class="contact__form-textarea"
               ></textarea>
             </label>
-            <button type="submit" class="button contact__form-submit"><img src="./media/icons/contact/paperplane.svg" alt="paperplane" class="form__button-icon">
+            <button type="submit" class="button contact__form-submit">
+              <img
+                src="./media/icons/contact/paperplane.svg"
+                alt="paperplane"
+                class="form__button-icon"
+              />
               Verstuur bericht
             </button>
           </form>
@@ -173,4 +206,5 @@
       </section>
     </main>
   </body>
+  <script src="./scripts/main.js"></script>
 </html>
