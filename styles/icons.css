@@ -63,3 +63,17 @@
 .over__feature-icon--location-pin {
     background-color: #F3E8FF;
 }
+
+
+.contact__detail-icon {
+  width: 3rem;
+  padding: 0.5rem;
+  background-color: #FEF3C7;
+  border-radius: 50%;
+}
+
+.form__button-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: black;
+}

@@ -5,6 +5,7 @@
 @import url('./cards.css');
 @import url('./about.css');
 @import url('./over.css');
+@import url('./contact.css');
 :root {
     /* fonts */
     --font-primary: 'DM Sans', sans-serif;

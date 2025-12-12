@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="./styles/app.css" />
+
+    <!-- DM font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./product.html">Product</a></li>
+
+          <li class="header__nav-item header__nav-item--logo">
+            <div class="logo__container">
+              <a href="./index.html"
+                ><img
+                  src="./media/logo/captraplogo.PNG"
+                  alt="Logo"
+                  class="header__logo"
+              /></a>
+            </div>
+          </li>
+          <li><a href="./over-captrap.html">Over CapTrap</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <img
+        src="./media/icons/hamburger-menu-mobile-svgrepo-com.svg"
+        alt="hamburger"
+        class="header__menu-toggle"
+      />
+    </header>
+    <main class="contact">
+      <section class="contact__intro">
+        <h1 class="contact__title">Contact</h1>
+        <p class="contact__subtitle">
+          Heb je vragen of wil je een bestelling plaatsen? Neem gerust contact
+          met ons op!
+        </p>
+      </section>
+      <section class="contact__details">
+        <h2 class="contact__details-title">Contactgegevens</h2>
+        <div class="contact__details-container">
+          <article class="contact__detail">
+            <img  src="./media/icons/contact/email.svg" alt="" class="contact__detail-icon" />
+
+            <div class="contact__detail-info">
+              <p class="contact__detail-label">E-mail</p>
+              <a href="mailto:captrap@gmail.com" class="contact__detail-link"
+                >captrap@gmail.com</a
+              >
+            </div>
+          </article>
+
+          <article class="contact__detail">
+            <img src="./media/icons/contact/telephone.svg" alt="" class="contact__detail-icon" />
+
+            <div class="contact__detail-info">
+              <p class="contact__detail-label">Telefoon</p>
+              <a href="tel:+1234567890" class="contact__detail-link"
+                >+32 (0)471 52 62 95</a
+              >
+            </div>
+          </article>
+
+          <article class="contact__detail">
+            <img src="./media/icons/contact/instagram.svg" alt="" class="contact__detail-icon" />
+
+            <div class="contact__detail-info">
+              <p class="contact__detail-label">Instagram</p>
+              <a
+                href="https://www.instagram.com/captrap_be/"
+                target="_blank"
+                class="contact__detail-link"
+                >@captrap_be</a
+              >
+            </div>
+          </article>
+        </div>
+        <article class="contact__response-time">
+          <p>
+            <span class="contact__response-time-label">Reactietermijn:</span> We
+            reageren binnen maximaal 48 uur op je bericht.
+          </p>
+        </article>
+        <section class="contact__form-section">
+          <form action="" class="contact__form">
+            <p class="contact__form-title">Stuur ons een bericht</p>
+            <label for="name" class="contact__form-label"
+              >Naam
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jouw naam"
+                required
+                class="contact__form-input"
+              />
+            </label>
+
+            <label for="email" class="contact__form-label"
+              >E-mail
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Jouw@email.com"
+                required
+                class="contact__form-input"
+              />
+            </label>
+
+            <div class="contact__customer-type">
+              <p class="contact__customer-type-title">Type klant</p>
+
+              <div class="selector__container">
+                  <label for="B2C" class="contact__customer-type-label"
+                  >
+                  <input
+                  type="radio"
+                  id="B2C"
+                  name="customer-type"
+                  value="B2C"
+                  required
+                  class="contact__customer-type-input"
+                  />
+                  B2C (particulier)
+                </label>
+                
+                  <label for="B2B" class="contact__customer-type-label"
+                    >
+                    <input
+                      type="radio"
+                      id="B2B"
+                      name="customer-type"
+                      value="B2B"
+                      required
+                      class="contact__customer-type-input"
+                    />
+                    B2B (Zakelijk)
+                  </label>
+              </div>
+            </div>
+
+            <label for="message" class="contact__form-label"
+              >Bericht
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Schrijf hier je bericht..."
+                required
+                class="contact__form-textarea"
+              ></textarea>
+            </label>
+            <button type="submit" class="button contact__form-submit"><img src="./media/icons/contact/paperplane.svg" alt="paperplane" class="form__button-icon">
+              Verstuur bericht
+            </button>
+          </form>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
