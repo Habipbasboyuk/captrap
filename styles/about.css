@@ -172,3 +172,46 @@
         }
     }
 }
+
+
+
+@media (min-width: 70rem) {
+
+    .about-hero__actions,.about-cta__actions {
+        width: 40% !important;
+    }
+    .about-solution__grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(2, auto) !important;
+        justify-content: center;
+    
+        .about-solution-card {
+            width: 100%;
+        }
+    }
+
+    .about-problems__description {
+        width: 60% !important;
+    }
+    .about-problems__grid {
+        flex-direction: row !important;
+        margin: 2rem;
+    }
+
+    .about-solution, .about-hero {
+        padding: 5rem 0;
+    }
+
+}
+
+@media (min-width: 90rem) {
+    .about-hero__description {
+       width: 50% !important;
+    }
+
+    .about-solution {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+}
