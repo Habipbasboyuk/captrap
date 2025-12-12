@@ -15,7 +15,7 @@
         position: relative;
         padding-bottom: 4px;
         cursor: pointer;
-
+        display: none;
         /* De 'onzichtbare' border */
         &::after {
             content: '';
