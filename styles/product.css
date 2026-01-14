@@ -1,0 +1,257 @@
+.product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product intro section */
+.product__intro {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.product__intro-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.product__intro-text {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Gallery section */
+.product__gallery {
+  text-align: center;
+  padding: 1rem;
+}
+
+.product__gallery-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.product__gallery-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Product images grid */
+.product__images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.product__image {
+  width: 100%;
+  height: 250px;
+  background-color: #f0f0f0;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1rem;
+}
+
+.product__image:first-child {
+  grid-column: 1;
+  height: 350px;
+}
+
+/* Tablet and up */
+@media (min-width: 48rem) {
+  .product__images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product__image:first-child {
+    grid-column: 1 / -1;
+    height: 400px;
+  }
+}
+
+/* Technical specs section */
+.product__specs {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.product__specs-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.product__specs-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.product__specs-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background-color: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product__specs-item {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+}
+
+.product__specs-item:last-child {
+  border-bottom: none;
+}
+
+.product__specs-label {
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: left;
+  font-size: 1rem;
+}
+
+.product__specs-value {
+  color: var(--color-primary);
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* Customization section */
+.product__customization {
+  width: 100%;
+  max-width: 500px;
+  background-color: #f7ba04;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  text-align: center;
+}
+
+.product__customization-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.product__customization-text {
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.product__customization-option {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product__customization-option-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* CTA section */
+.product__cta {
+  width: 100%;
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+.product__cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f7ba04;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.product__button {
+  background-color: #f7ba04;
+  color: var(--color-primary);
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.product__button a {
+  text-decoration: none;
+  color: var(--color-primary);
+  display: block;
+}
+
+.product__button:hover {
+  transform: translateY(-2px);
+}
+
+.product__button--customization {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.product__button--customization a {
+  color: white;
+}
+
+/* Footer-like CTA at bottom */
+.product__cta .product__button {
+  background-color: #f7ba04;
+  color: var(--color-primary);
+}
+
+.product__cta .product__button a {
+  color: var(--color-primary);
+}
+
+/* Desktop adjustments */
+@media (min-width: 70rem) {
+  .product {
+    padding: 4rem 2rem;
+  }
+
+  .product__intro-title {
+    font-size: 3rem;
+  }
+
+  .product__images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

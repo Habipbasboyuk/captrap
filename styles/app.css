@@ -1,48 +1,48 @@
-@import url('./icons.css');
-@import url('./landing.css');
-@import url('./header.css');
-@import url('./buttons.css');
-@import url('./cards.css');
-@import url('./about.css');
-@import url('./over.css');
-@import url('./contact.css');
+@import url("./icons.css");
+@import url("./landing.css");
+@import url("./header.css");
+@import url("./buttons.css");
+@import url("./cards.css");
+@import url("./about.css");
+@import url("./over.css");
+@import url("./contact.css");
+@import url("./product.css");
 :root {
-    /* fonts */
-    --font-primary: 'DM Sans', sans-serif;
-    /* padding */
-    --padding-small: 1rem;
-    --padding-medium: 2rem;
-    --padding-large: 3rem;
-    --padding-xlarge: 4rem;
+  /* fonts */
+  --font-primary: "DM Sans", sans-serif;
+  /* padding */
+  --padding-small: 1rem;
+  --padding-medium: 2rem;
+  --padding-large: 3rem;
+  --padding-xlarge: 4rem;
 
-    /* margins */
-    --margin-small: 1rem;
-    --margin-medium: 2rem;
-    --margin-large: 3rem;
-    --margin-xlarge: 4rem;
-    /* colors */
-    --color-primary: #1A1A1A;
-    --color-secondary: #F7BA04;
-    --color-background: #ffffff;
-    --color-paragraph: #6e6e6e;
-    --color-cards-about: #312B18;
-    /* border-radius */
-    --border-radius: 8px;
-
+  /* margins */
+  --margin-small: 1rem;
+  --margin-medium: 2rem;
+  --margin-large: 3rem;
+  --margin-xlarge: 4rem;
+  /* colors */
+  --color-primary: #1a1a1a;
+  --color-secondary: #f7ba04;
+  --color-background: #ffffff;
+  --color-paragraph: #6e6e6e;
+  --color-cards-about: #312b18;
+  /* border-radius */
+  --border-radius: 8px;
 }
 
- * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-primary);
-    text-align: center;
- }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  text-align: center;
+}
 
- p {
-    color: var(--color-paragraph);
- }
+p {
+  color: var(--color-paragraph);
+}
 
- main {
-   position: relative;
- }
+main {
+  position: relative;
+}

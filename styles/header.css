@@ -88,6 +88,10 @@ body.darker::before {
   }
 }
 
+.header__nav .header__nav-list li.activepage {
+  display: none;
+}
+
 /* Mobile overlay: show all items and stack vertically */
 .header__nav-mobile--visible .header__nav-list {
   flex-direction: column;
@@ -98,6 +102,11 @@ body.darker::before {
 
 .header__nav-mobile--visible .header__nav-list li {
   display: block; /* override desktop hidden items */
+}
+
+/* Show active page link in mobile menu */
+.header__nav-mobile--visible .header__nav-list li.activepage {
+  display: block;
 }
 
 .header__nav-mobile--visible .header__nav-list a {
@@ -111,13 +120,13 @@ body.darker::before {
   color: var(--color-secondary);
 }
 
-/* Mobile: no underline or bottom border for active item */
+/* Mobile: no underline or bottom border for active item, but yellow text */
 .header__nav-mobile--visible .header__nav-list .activepage {
   border-bottom: none;
 }
 
 .header__nav-mobile--visible .header__nav-list .activepage a {
-  color: var(--color-secondary);
+  color: #f7ba04; /* Yellow color for active page */
 }
 
 .activepage {
@@ -125,7 +134,7 @@ body.darker::before {
 }
 
 .logo__container {
-    margin-top: 1rem;
+  margin-top: 1rem;
   padding: 0.6rem;
   background-color: #f7ba04;
   border-radius: 16px;
@@ -140,7 +149,6 @@ body.darker::before {
 .header__nav .header__nav-list .header__nav-item--logo a {
   border-bottom: none !important;
   text-decoration: none !important;
-  
 }
 
 .header__menu-toggle {
@@ -156,6 +164,34 @@ body.darker::before {
   /* Hide desktop nav items except the centered logo */
   .header__nav .header__nav-list li:not(.header__nav-item--logo) {
     display: none;
+  }
+}
+
+/* Desktop: switch to full navigation at 70rem */
+@media (min-width: 70rem) {
+  /* Show all desktop nav items including active page */
+  .header__nav .header__nav-list li:not(.header__nav-item--logo) {
+    display: block;
+  }
+
+  /* Show active page on desktop */
+  .header__nav .header__nav-list li.activepage {
+    display: block;
+  }
+
+  /* Hide hamburger menu on desktop */
+  .header__menu-toggle {
+    display: none;
+  }
+
+  /* Hide mobile overlay on desktop */
+  .header__nav--mobile {
+    display: none !important;
+  }
+
+  /* Style desktop navigation items */
+  .header__nav .header__nav-list li:not(:nth-child(3)):not(.activepage) {
+    display: block;
   }
 }
 

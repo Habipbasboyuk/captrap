@@ -13,7 +13,7 @@
     rel="stylesheet"
   />
   <body>
-        <header class="header">
+    <header class="header">
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li><a href="./about.html">About</a></li>
@@ -42,14 +42,13 @@
 
     <nav class="header__nav--mobile header__nav-mobile--visible nonactive">
       <ul class="header__nav-list header__nav-list--mobile">
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li><a href="./product.html">Product</a></li>
-          <li><a href="./over-captrap.html">Over CapTrap</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li><a href="./product.html">Product</a></li>
+        <li><a href="./over-captrap.html">Over CapTrap</a></li>
+        <li><a href="./contact.html">Contact</a></li>
         <li><a href="./about.html">About</a></li>
-
       </ul>
       <img
         class="menu-closer nonactive"
@@ -57,7 +56,86 @@
         alt="close menu"
       />
     </nav>
-    <main></main>
+    <main class="product">
+      <section class="product__intro">
+        <h2 class="product__intro-title">Het Product</h2>
+        <p class="product__intro-text">
+          Bekijk CapTrap van dichtbij en ontdek alle technische details.
+        </p>
+      </section>
+      <section class="product__gallery">
+        <h2 class="product__gallery-title">Productfoto's</h2>
+        <p class="product__gallery-text">
+          Bekijk CapTrap vanuit meerdere hoeken
+        </p>
+      </section>
+      <section class="product__images">
+        <img src="#" alt="#" class="product__image" />
+        <img src="#" alt="#" class="product__image" />
+        <img src="#" alt="#" class="product__image" />
+        <img src="#" alt="#" class="product__image" />
+        <img src="#" alt="#" class="product__image" />
+      </section>
+
+      <section class="product__specs">
+        <h2 class="product__specs-title">Technische Specificaties</h2>
+        <p class="product__specs-text">Alle details op een rij.</p>
+        <div class="product__specs-list">
+          <div class="product__specs-item">
+            <span class="product__specs-label">Materiaal</span>
+            <span class="product__specs-value">PLA + metaal</span>
+          </div>
+          <div class="product__specs-item">
+            <span class="product__specs-label">Gewicht</span>
+            <span class="product__specs-value">± 73 gram</span>
+          </div>
+          <div class="product__specs-item">
+            <span class="product__specs-label">Capaciteit</span>
+            <span class="product__specs-value">24 kroonkurken</span>
+          </div>
+          <div class="product__specs-item">
+            <span class="product__specs-label">Compatibiliteit</span>
+            <span class="product__specs-value">Alle standaard bakken</span>
+          </div>
+          <div class="product__specs-item">
+            <span class="product__specs-label">Kleur</span>
+            <span class="product__specs-value"
+              >Zwart & geel (basis), andere kleuren via personalisatie</span
+            >
+          </div>
+          <div class="product__specs-item">
+            <span class="product__specs-label">Personalisatie</span>
+            <span class="product__specs-value">Logo gegraveerd (+ €2,99)</span>
+          </div>
+          <div class="product__specs-item">
+            <span class="product__specs-label">Productie</span>
+            <span class="product__specs-value">Lokaal – 3D-geprint</span>
+          </div>
+        </div>
+      </section>
+      <section class="product__customization">
+        <h2 class="product__customization-title">Personalisatie</h2>
+        <p class="product__customization-text">
+          Maak CapTrap uniek met je eigen logo! Perfect voor bedrijven of
+          evenementen.
+        </p>
+        <div class="product__customization-option">
+          <h3 class="product__customization-option-title">
+            Logo gegrafeerd: (+ €2,99)
+          </h3>
+        </div>
+
+        <button class="product__button product__button--customization">
+          <a href="./contact.html">B2B-personalisatie aanvragen</a>
+        </button>
+      </section>
+      <section class="product__cta">
+        <h2 class="product__cta-title">Klaar om te bestellen?</h2>
+        <button class="product__button product__button--order">
+          <a href="./contact.html">Neem contact op voor bestellingen</a>
+        </button>
+      </section>
+    </main>
   </body>
   <script src="./scripts/main.js"></script>
 </html>
