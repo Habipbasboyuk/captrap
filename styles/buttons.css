@@ -1,14 +1,45 @@
 .button__findmore {
     background-color: var(--color-primary);
     color: white;
-
 }
 
 .button__contact {
     background-color: var(--color-secondary);
-
 }
 
-.button__contact, .button__findmore {
+
+/* Universele button styling voor <a> en <button> */
+.button,
+.button__contact, .button__findmore,
+.button__order, .button__b2b,
+a.button__ordernow, a.button__b2b, button.button__ordernow, button.button__b2b {
     width: 30%;
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    margin: 0.5em;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    font-family: var(--font-primary);
+}
+
+.button__order {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.button__order:hover {
+    background-color: #333;
+}
+
+.button__b2b {
+    background-color: var(--color-secondary);
+    color: #1a1a1a;
+}
+
+.button__b2b:hover {
+    background-color: #ffd700;
 }

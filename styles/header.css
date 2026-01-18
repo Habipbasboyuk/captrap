@@ -29,9 +29,9 @@ body.darker::before {
   background-color: white;
   z-index: 9999;
   flex-direction: column;
-  justify-content: flex-start; /* align content to top */
-  align-items: flex-start; /* align items to left */
-  padding: 2rem 0; /* add inner spacing */
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem 0;
   animation: slideInFromRight 0.3s ease-in-out;
 }
 
@@ -52,13 +52,11 @@ body.darker::before {
   list-style: none;
   padding: 0;
 
-  /* Desktop-only: hide items except logo and active page in the top nav */
   .header__nav & li:not(:nth-child(3)):not(.activepage) {
     position: relative;
     padding-bottom: 4px;
     cursor: pointer;
     display: none;
-    /* De 'onzichtbare' border */
     &::after {
       content: "";
       position: absolute;
@@ -68,16 +66,14 @@ body.darker::before {
       height: 2px;
       background-color: var(--color-secondary);
 
-      /* Start-staat: ingekrompen naar het midden (of links) */
       transform: scaleX(0);
       transition: transform 0.3s ease-in-out;
-      transform-origin: bottom right; /* Animeert van rechts naar links bij weghalen */
+      transform-origin: bottom right;
     }
 
     &:hover::after {
-      /* Eind-staat: volledige breedte */
       transform: scaleX(1);
-      transform-origin: bottom left; /* Animeert van links naar rechts bij hover */
+      transform-origin: bottom left;
     }
   }
 
@@ -92,7 +88,6 @@ body.darker::before {
   display: none;
 }
 
-/* Mobile overlay: show all items and stack vertically */
 .header__nav-mobile--visible .header__nav-list {
   flex-direction: column;
   gap: 2rem;
@@ -101,10 +96,9 @@ body.darker::before {
 }
 
 .header__nav-mobile--visible .header__nav-list li {
-  display: block; /* override desktop hidden items */
+  display: block; 
 }
 
-/* Show active page link in mobile menu */
 .header__nav-mobile--visible .header__nav-list li.activepage {
   display: block;
 }
@@ -120,13 +114,13 @@ body.darker::before {
   color: var(--color-secondary);
 }
 
-/* Mobile: no underline or bottom border for active item, but yellow text */
+
 .header__nav-mobile--visible .header__nav-list .activepage {
   border-bottom: none;
 }
 
 .header__nav-mobile--visible .header__nav-list .activepage a {
-  color: #f7ba04; /* Yellow color for active page */
+  color: #f7ba04;
 }
 
 .activepage {
@@ -159,44 +153,34 @@ body.darker::before {
   cursor: pointer;
 }
 
-/* Mobile: hide desktop nav bar, show only hamburger + overlay */
 @media (max-width: 768px) {
-  /* Hide desktop nav items except the centered logo */
   .header__nav .header__nav-list li:not(.header__nav-item--logo) {
     display: none;
   }
 }
 
-/* Desktop: switch to full navigation at 70rem */
 @media (min-width: 70rem) {
-  /* Show all desktop nav items including active page */
   .header__nav .header__nav-list li:not(.header__nav-item--logo) {
     display: block;
   }
 
-  /* Show active page on desktop */
   .header__nav .header__nav-list li.activepage {
     display: block;
   }
 
-  /* Hide hamburger menu on desktop */
   .header__menu-toggle {
     display: none;
   }
 
-  /* Hide mobile overlay on desktop */
   .header__nav--mobile {
     display: none !important;
   }
 
-  /* Style desktop navigation items */
   .header__nav .header__nav-list li:not(:nth-child(3)):not(.activepage) {
     display: block;
   }
 }
 
-.header__nav--mobile {
-}
 
 .header__nav-list--mobile {
   text-align: left !important;

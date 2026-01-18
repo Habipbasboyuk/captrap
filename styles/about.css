@@ -33,11 +33,14 @@
 
         .button__ordernow {
             background-color: var(--color-secondary);
+            width: 100%;
+            color: white;
         }
 
         .button__b2b {
             background-color: var(--color-primary);
             color: #ffffff;
+            width: 100%;
         }
     }
 }
@@ -163,10 +166,12 @@
         }
 
         .button-cta__order {
+            width: 100%;
             background-color: var(--color-primary);
             color: #ffffff;
         }
         .button-cta__b2b {
+            width: 100%;
             background-color: var(--color-primary);
             color: var(--color-secondary);
         }
