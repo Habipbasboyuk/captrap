@@ -37,7 +37,7 @@
       padding: 0.75rem 2rem;
       border-radius: var(--border-radius);
       text-decoration: none;
-      color: white;
+      color: var(--color-primary);
     }
 
     .button__b2b {
@@ -187,6 +187,13 @@
 }
 
 @media (min-width: 70rem) {
+
+    .about-cta {
+        width: 98%;
+        border-radius: var(--border-radius);
+        margin: 3rem auto;
+    }
+
   .about-hero__actions,
   .about-cta__actions {
     width: 40% !important;
@@ -220,6 +227,10 @@
   .about-hero__description {
     width: 50% !important;
   }
+      .about-cta {
+        width: 88%;
+        margin: 0rem auto;
+    }
 
   .about-solution {
     width: 90% !important;
