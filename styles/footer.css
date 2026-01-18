@@ -29,6 +29,7 @@
   align-self: flex-start;
 }
 .footer__brand-description {
+    text-align: left;
   color: var(--color-secondary);
 }
 
@@ -75,10 +76,6 @@
   }
   .footer__brand {
     width: min-content;
-
-    .footer__brand-description {
-      text-align: left;
-    }
   }
   .footer__info {
     width: 90% !important;
