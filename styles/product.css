@@ -148,7 +148,7 @@
 
 /* Customization section */
 .product__customization {
-  width: 60vw;
+  width: 95%;
   background-color: #f7ba04;
   border-radius: var(--border-radius);
   padding: 2rem;
@@ -187,7 +187,7 @@
 
 /* CTA section */
 .product__cta {
-  width: 60vw;
+  width: 95%;
   background-color: var(--color-primary);
   border-radius: var(--border-radius);
   padding: 3rem 2rem;
