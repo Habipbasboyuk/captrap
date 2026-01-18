@@ -52,11 +52,16 @@
 
 /* Product images grid */
 .product__images {
+
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   width: 100%;
   padding: 1rem;
+
+  img {
+    object-fit: cover;
+  }
 }
 
 .product__image {
@@ -257,5 +262,6 @@
 
   .product__images {
     grid-template-columns: repeat(2, 1fr);
+
   }
 }
