@@ -52,7 +52,6 @@
 
 /* Product images grid */
 .product__images {
-
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -79,6 +78,14 @@
 .product__image:first-child {
   grid-column: 1;
   height: 350px;
+}
+
+/* Make the last image span 2 columns on tablet and up */
+@media (min-width: 48rem) {
+  .product__image--wide {
+    grid-column: 1 / -1;
+    object-position: center 65%;
+  }
 }
 
 /* Tablet and up */
@@ -262,6 +269,5 @@
 
   .product__images {
     grid-template-columns: repeat(2, 1fr);
-
   }
 }

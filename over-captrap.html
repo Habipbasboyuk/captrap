@@ -243,10 +243,13 @@
       </section>
       <section class="footer__copyright">
         <p class="footer__copyright-text">
-          &copy; 2024 CapTrap. Alle rechten voorbehouden.
+          &copy; <span id="copyright-year"></span> CapTrap. Alle rechten voorbehouden.
         </p>
       </section>
     </footer>
+    <script>
+      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
   </body>
   <script src="./scripts/main.js"></script>
 </html>
